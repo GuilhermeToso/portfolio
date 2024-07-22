@@ -5,8 +5,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { IoLayersOutline } from "react-icons/io5";
-import { IoTrophyOutline } from "react-icons/io5";
-import { IoSchoolOutline } from "react-icons/io5";
+import { PiPathLight } from "react-icons/pi";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import {Link as ScrollLink} from 'react-scroll';
 
@@ -15,7 +14,7 @@ export default function BottomNav() {
     const [active, setActive] = useState<string>('home');
     const sections: Record<string, React.ComponentType<{ className?: string }>> = {'home': IoHomeOutline, 'about': IoPersonOutline,
         'services': IoBriefcaseOutline, 'projects': IoLayersOutline,
-        'education': IoSchoolOutline, 'contact': IoPaperPlaneOutline};
+        'timeline': PiPathLight, 'contact': IoPaperPlaneOutline};
     return (
         <div className="fixed h-16 bottom-0 w-full z-50 rounded-t-md flex md:hidden justify-center px-1 bg-gradient-to-r from-slate-900 to-slate-950 border-t border-base-200/40 shadow-inner shadow-base-200/10">
             <div role="tablist" className="tabs tabs-bordered flex flex-row justify-around items-center w-full h-full">
