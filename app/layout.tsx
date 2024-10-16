@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import Providers from "@/app/providers";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,8 +38,8 @@ export default async function RootLayout({
     <html lang="en">
       <body className={`${inter.className} overflow-y-scroll`}>
         <Providers>{children}</Providers>
-        <GoogleAnalytics gaId="G-8C6EFPM7L8" />
       </body>
+      <GoogleAnalytics gaId="G-8C6EFPM7L8" />
     </html>
   );
 }
