@@ -38,8 +38,8 @@ export default async function RootLayout({
     <html lang="en">
       <body className={`${inter.className} overflow-y-scroll`}>
         <Providers>{children}</Providers>
+        <GoogleTagManager gtmId="G-8C6EFPM7L8" />
       </body>
-      <GoogleTagManager gtmId="G-8C6EFPM7L8" />
     </html>
   );
 }
